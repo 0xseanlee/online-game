@@ -1,0 +1,15 @@
+{
+  "short_name": "OnlineGame",
+  "name": "GitHub Pages 靜態小遊戲",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone"
+}
