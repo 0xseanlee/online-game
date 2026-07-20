@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
@@ -15,8 +15,9 @@ body {
 }
 
 .container {
-  width: 340px;
-  padding: 10px;
+  width: 360px;
+  padding: 15px;
+  text-align: center;
 }
 
 .header {
@@ -27,29 +28,30 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: bold;
   color: #776e65;
 }
 
 .scores-container {
   display: flex;
-  gap: 5px;
+  gap: 6px;
 }
 
 .score-box {
   background: #bbada0;
-  padding: 5px 15px;
+  padding: 6px 16px;
   border-radius: 3px;
-  color: white;
-  text-align: center;
-  font-size: 12px;
+  color: #eee4da;
+  font-size: 11px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .score-box span {
   display: block;
   font-size: 18px;
+  color: white;
 }
 
 .game-intro {
@@ -58,21 +60,27 @@ h1 {
   align-items: center;
   margin-bottom: 15px;
   font-size: 13px;
+  color: #776e65;
 }
 
 .btn {
   background: #8f7a66;
-  color: white;
+  color: #f9f6f2;
   border: none;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 3px;
   font-weight: bold;
   cursor: pointer;
 }
 
+.btn:hover {
+  background: #9f8a76;
+}
+
 .grid-container {
   width: 320px;
   height: 320px;
+  margin: 0 auto;
   background-color: #bbada0;
   border-radius: 6px;
   padding: 10px;
@@ -80,7 +88,6 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
-  position: relative;
   touch-action: none;
 }
 
@@ -92,7 +99,6 @@ h1 {
   align-items: center;
   font-size: 28px;
   font-weight: bold;
-  transition: transform 0.1s ease, background-color 0.1s ease;
 }
 
 .tile-2    { background: #eee4da; color: #776e65; }
@@ -101,17 +107,17 @@ h1 {
 .tile-16   { background: #f59563; color: #f9f6f2; }
 .tile-32   { background: #f67c5f; color: #f9f6f2; }
 .tile-64   { background: #f65e3b; color: #f9f6f2; }
-.tile-128  { background: #edcf72; color: #f9f6f2; font-size: 24px; }
-.tile-256  { background: #edcc61; color: #f9f6f2; font-size: 24px; }
-.tile-512  { background: #edc850; color: #f9f6f2; font-size: 24px; }
-.tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 20px; }
-.tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 20px; }
+.tile-128  { background: #edcf72; color: #f9f6f2; font-size: 24px; box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
+.tile-256  { background: #edcc61; color: #f9f6f2; font-size: 24px; box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
+.tile-512  { background: #edc850; color: #f9f6f2; font-size: 24px; box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
+.tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 20px; box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
+.tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 20px; box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
 
 .back-link {
-  display: block;
+  display: inline-block;
   margin-top: 20px;
-  text-align: center;
-  color: #8f7a66;
-  text-decoration: none;
+  color: #776e65;
+  text-decoration: underline;
+  font-size: 14px;
   font-weight: bold;
 }
