@@ -2,101 +2,128 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: #0f172a;
   color: #f8fafc;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
-/* 頁面載入淡入動畫 */
 .container {
-  text-align: center;
   background: #1e293b;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  max-width: 400px;
-  width: 90%;
-  animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  width: 360px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
   color: #38bdf8;
 }
 
-.score-board {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+.scores-container {
+  display: flex;
+  gap: 10px;
 }
 
-#score {
-  color: #f43f5e;
+.score-box {
+  background: #334155;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.score-box span {
+  display: block;
+  font-size: 1.1rem;
   font-weight: bold;
-  display: inline-block;
-  transition: transform 0.15s ease;
+  color: #f8fafc;
 }
 
-/* 分數增加時的彈跳動畫類別 */
-.score-pop {
-  animation: pop 0.25s ease-in-out;
+.game-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
 }
 
-.game-area {
-  margin: 1.5rem 0;
-}
-
-/* 按鈕動畫與動態光澤 */
 .btn {
-  display: inline-block;
   background: linear-gradient(135deg, #6366f1, #a855f7);
   color: white;
   border: none;
-  padding: 0.8rem 1.8rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   border-radius: 0.5rem;
   cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  transition: transform 0.1s, box-shadow 0.2s;
 }
 
 .btn:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
 }
 
-.btn:active {
-  transform: translateY(1px) scale(0.96);
-  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.4);
+.grid-container {
+  width: 296px;
+  height: 296px;
+  margin: 0 auto;
+  background-color: #0f172a;
+  border-radius: 12px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  touch-action: none;
 }
 
-/* --- 動畫 Keyframes --- */
-
-/* 卡片登場動畫 */
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.cell {
+  background-color: #1e293b;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-/* 分數彈跳動畫 */
-@keyframes pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.5); color: #fbbf24; }
-  100% { transform: scale(1); }
+.tile-2    { background: #334155; color: #f8fafc; }
+.tile-4    { background: #475569; color: #f8fafc; }
+.tile-8    { background: #f97316; color: #ffffff; }
+.tile-16   { background: #ea580c; color: #ffffff; }
+.tile-32   { background: #ef4444; color: #ffffff; }
+.tile-64   { background: #dc2626; color: #ffffff; }
+.tile-128  { background: #eab308; color: #ffffff; font-size: 1.2rem; }
+.tile-256  { background: #ca8a04; color: #ffffff; font-size: 1.2rem; }
+.tile-512  { background: #10b981; color: #ffffff; font-size: 1.2rem; }
+.tile-1024 { background: #06b6d4; color: #ffffff; font-size: 1rem; }
+.tile-2048 { background: #3b82f6; color: #ffffff; font-size: 1rem; }
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
