@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #0f172a;
-  color: #f8fafc;
+  background-color: #fefce8;
+  color: #713f12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +15,13 @@ body {
 }
 
 .container {
-  background: #1e293b;
+  background: #ffffff;
   padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(234, 179, 8, 0.15);
   width: 360px;
   text-align: center;
+  border: 2px solid #fef08a;
 }
 
 .header {
@@ -32,7 +33,7 @@ body {
 
 h1 {
   font-size: 2.2rem;
-  color: #38bdf8;
+  color: #ca8a04;
 }
 
 .scores-container {
@@ -41,18 +42,19 @@ h1 {
 }
 
 .score-box {
-  background: #334155;
+  background: #fef9c3;
   padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.8rem;
-  color: #94a3b8;
+  color: #854d0e;
+  border: 1px solid #fef08a;
 }
 
 .score-box span {
   display: block;
   font-size: 1.1rem;
   font-weight: bold;
-  color: #f8fafc;
+  color: #a16207;
 }
 
 .game-intro {
@@ -61,30 +63,31 @@ h1 {
   align-items: center;
   margin-bottom: 1.2rem;
   font-size: 0.95rem;
+  color: #854d0e;
 }
 
 .btn {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, #eab308, #ca8a04);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   cursor: pointer;
   transition: transform 0.1s, box-shadow 0.2s;
 }
 
 .btn:hover {
-  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.4);
 }
 
 .grid-container {
   width: 296px;
   height: 296px;
   margin: 0 auto;
-  background-color: #0f172a;
-  border-radius: 12px;
+  background-color: #fef08a;
+  border-radius: 14px;
   padding: 8px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -94,31 +97,32 @@ h1 {
 }
 
 .cell {
-  background-color: #1e293b;
-  border-radius: 6px;
+  background-color: #ffffff;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
   font-weight: bold;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
-.tile-2    { background: #334155; color: #f8fafc; }
-.tile-4    { background: #475569; color: #f8fafc; }
-.tile-8    { background: #f97316; color: #ffffff; }
-.tile-16   { background: #ea580c; color: #ffffff; }
-.tile-32   { background: #ef4444; color: #ffffff; }
-.tile-64   { background: #dc2626; color: #ffffff; }
-.tile-128  { background: #eab308; color: #ffffff; font-size: 1.2rem; }
-.tile-256  { background: #ca8a04; color: #ffffff; font-size: 1.2rem; }
-.tile-512  { background: #10b981; color: #ffffff; font-size: 1.2rem; }
-.tile-1024 { background: #06b6d4; color: #ffffff; font-size: 1rem; }
-.tile-2048 { background: #3b82f6; color: #ffffff; font-size: 1rem; }
+.tile-2    { background: #fef9c3; color: #713f12; }
+.tile-4    { background: #fef08a; color: #713f12; }
+.tile-8    { background: #fde047; color: #713f12; }
+.tile-16   { background: #eab308; color: #ffffff; }
+.tile-32   { background: #ca8a04; color: #ffffff; }
+.tile-64   { background: #a16207; color: #ffffff; }
+.tile-128  { background: #f59e0b; color: #ffffff; font-size: 1.2rem; }
+.tile-256  { background: #d97706; color: #ffffff; font-size: 1.2rem; }
+.tile-512  { background: #b45309; color: #ffffff; font-size: 1.2rem; }
+.tile-1024 { background: #78350f; color: #ffffff; font-size: 1rem; }
+.tile-2048 { background: #451a03; color: #ffffff; font-size: 1rem; }
 
 .back-link {
   display: inline-block;
   margin-top: 1.2rem;
-  color: #38bdf8;
+  color: #ca8a04;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
