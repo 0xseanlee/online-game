@@ -115,10 +115,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (r < 3 && board[r][c] === board[r + 1][c]) return;
       }
     }
-    setTimeout(() => alert("Game Over! 再接再厲！"), 200);
+    setTimeout(() => alert("Game Over!"), 200);
   }
 
-  // 鍵盤監聽 (方向鍵)
   document.addEventListener("keydown", (e) => {
     if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
       e.preventDefault();
@@ -127,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 手勢觸控 (Touch Events for Mobile)
   let startX = 0, startY = 0;
   gridContainer.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
