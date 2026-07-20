@@ -3,15 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Pages 靜態小遊戲</title>
+  <title>🎮 線上小遊戲大廳</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>🎯 點擊挑戰賽</h1>
-    <p>試著挑戰你的極速手速！</p>
+    <h1>🎮 線上小遊戲大廳</h1>
+    <p>選擇一個你想玩的遊戲吧！</p>
+
+    <div class="game-menu" style="margin: 20px 0; display: flex; flex-direction: column; gap: 10px;">
+      <a href="games/2048/index.html" class="btn" style="text-decoration: none;">🔢 玩 2048</a>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #334155; margin: 25px 0;">
+
+    <h2>🎯 快速小測試：點擊挑戰賽</h2>
     
     <div class="score-board">
       得分：<span id="score">0</span>
