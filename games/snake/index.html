@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>貪食蛇 - 靜態頁面小遊戲</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>貪食蛇</h1>
+      <div class="scores-container">
+        <div class="score-box">分數 <span id="score">0</span></div>
+        <div class="score-box">最高分 <span id="best-score">0</span></div>
+      </div>
+    </div>
+
+    <div class="game-intro">
+      <span>使用方向鍵或滑動控制方向</span>
+      <button id="restart-btn" class="btn">重新開始</button>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="game-canvas" width="320" height="320"></canvas>
+    </div>
+
+    <a href="../../index.html" class="back-link">← 回遊戲大廳</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
