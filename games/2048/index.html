@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048 - 靜態頁面小遊戲</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2048</h1>
+      <div class="scores-container">
+        <div class="score-box">分數 <span id="score">0</span></div>
+        <div class="score-box">最高分 <span id="best-score">0</span></div>
+      </div>
+    </div>
+
+    <div class="game-intro">
+      <span>滑動/方向鍵合併數字，湊出 <strong>2048</strong>！</span>
+      <button id="restart-btn" class="btn">重新開始</button>
+    </div>
+
+    <div class="grid-container" id="grid-container">
+      </div>
+    
+    <a href="../../index.html" class="back-link">← 回遊戲大廳</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
